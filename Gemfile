@@ -7,6 +7,20 @@ gem 'rails', '3.2.6'
 
 gem 'sqlite3'
 
+gem "settingslogic"
+
+gem "devise"
+# bootstrap
+
+gem "will_paginate"
+gem "simple_form", :git => "https://github.com/plataformatec/simple_form.git"
+gem "bootstrap_helper"
+gem "seo_helper"
+
+# facebook
+gem "open_graph_helper"
+gem "google_plus_helper"
+
 
 # Gems used only for assets and not required
 # in production environments by default.

@@ -1,4 +1,9 @@
 BootstrapDemo::Application.routes.draw do
+  
+  devise_for :users
+
+  match "/search" => "search#index", :as => "search"
+
   resources :posts
 
   # The priority is based upon order of creation:
@@ -26,6 +31,7 @@ BootstrapDemo::Application.routes.draw do
   #       get 'sold'
   #     end
   #   end
+
 
 
   # Sample resource route with sub-resources:

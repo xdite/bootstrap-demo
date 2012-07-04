@@ -1,0 +1,8 @@
+<div class="box">
+  <h3 class="title">公告匯率</h3>
+  <ul>
+    <% ExchangeRate.all.each do |rate| %>
+     <li> 1 <%= rate.rate_name %> 兌換 <%= rate.rate_in %> 新台幣 </li>
+    <% end %>
+  </ul>
+</div>
