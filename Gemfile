@@ -14,7 +14,8 @@ gem "devise"
 
 gem "will_paginate"
 gem "simple_form", :git => "https://github.com/plataformatec/simple_form.git"
-gem "bootstrap_helper"
+gem "bootstrap_helper", "2.1.0"
+
 gem "seo_helper"
 
 # facebook
