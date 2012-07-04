@@ -1,6 +1,12 @@
+<div class="span12">
+
 <h1>Listing posts</h1>
 
-<table>
+<div class="toolbar group">
+  <%= link_to 'New Post', new_post_path, :class => "btn btn-primary pull-right" %>
+</div>
+
+<table class="table">
   <tr>
     <th>Title</th>
     <th>Content</th>
@@ -22,4 +28,6 @@
 
 <br />
 
-<%= link_to 'New Post', new_post_path %>
+
+
+</div>

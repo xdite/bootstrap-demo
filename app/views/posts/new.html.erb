@@ -1,5 +1,10 @@
+<div class="span12">
 <h1>New post</h1>
 
-<%= render 'form' %>
+<div class="toolbar group">
+   <%= link_to "Back", posts_path, :class => "pull-right" %>
+</div>
 
-<%= link_to 'Back', posts_path %>
+<%= render "form" %>
+
+</div>
