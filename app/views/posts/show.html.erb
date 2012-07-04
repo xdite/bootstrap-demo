@@ -1,15 +1,9 @@
-<p id="notice"><%= notice %></p>
+<div class="span12">
+  <div class="toolbar group pull-right">
+    <%= link_to 'Edit', edit_post_path(@post), :class => "btn btn-primary" %> | <%= link_to 'Back', posts_path %>
+  </div>
+  <h2> <%= @post.title %> </h2>
 
-<p>
-  <b>Title:</b>
-  <%= @post.title %>
-</p>
+  <p> <%= simple_format(@post.content) %> </p>
 
-<p>
-  <b>Content:</b>
-  <%= @post.content %>
-</p>
-
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+</div>
