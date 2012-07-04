@@ -1,4 +1,6 @@
 BootstrapDemo::Application.routes.draw do
+  resources :posts
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -25,6 +27,7 @@ BootstrapDemo::Application.routes.draw do
   #     end
   #   end
 
+
   # Sample resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
@@ -50,6 +53,8 @@ BootstrapDemo::Application.routes.draw do
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
 
+  root :to => "posts#index"
+  
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
